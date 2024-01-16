@@ -1,7 +1,3 @@
-
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
-
 fun main() {
     val builder: ReportBuilder
 
@@ -16,5 +12,5 @@ fun main() {
         else -> throw Exception()
     }
     val result = builder.build()
-    println(Json.encodeToString(result))
+    println(result.toString())
 }
